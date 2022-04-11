@@ -1,7 +1,11 @@
+using Bookstore.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddTransient<IBookDAL, BookDAL>();
 
 var app = builder.Build();
 

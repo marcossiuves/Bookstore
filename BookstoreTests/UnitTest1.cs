@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Bookstore.Models;
 
 namespace BookstoreTests
 {
@@ -8,6 +9,9 @@ namespace BookstoreTests
         [TestMethod]
         public void TestMethod1()
         {
+            BookDAL book = new BookDAL();
+
+
         }
     }
 }
