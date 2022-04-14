@@ -8,7 +8,7 @@
         {
         }
 
-        public Boolean isValidIsbn(String isb)
+        public Boolean isValidIsbn(String isbn)
         {
             return isbn.Length == 9;
         }
