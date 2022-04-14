@@ -12,13 +12,10 @@ namespace BookstoreTests
 
             string invalidIsbn = "1234";
 
-           var isbn = new Isbn(invalidIsbn);
-
-
-
-
-
-
+           var isbn = new Isbn();
+                    
+            Assert.IsFalse(isbn.isValidIsbn(invalidIsbn));
+           
         }
     }
 }

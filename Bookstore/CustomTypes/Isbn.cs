@@ -4,10 +4,13 @@
     {
         public string isbn { get; set; }
 
-        public Isbn(String isbn)
+        public Isbn()
         {
-            this.isbn = isbn; 
         }
 
+        public Boolean isValidIsbn(String isb)
+        {
+            return isbn.Length == 9;
+        }
     }
 }
